@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {margin: 0;}
+    .container {display: flex; justify-content: center; align-items: center; height: 100vh;}
+    .emoji {font-size: 5rem;}
+    .message {font-size: 1.5rem;}
+  </style>
+  <script>
+    let colors = ['red', 'green', 'blue'];
+    let index = 0;
+    function changeColor() {
+      document.body.style.backgroundColor = colors[index];
+      index = (index + 1) % colors.length;
+    }
+    setInterval(changeColor, 5000);
+  </script>
+</head>
+<body>
+  <div class='container'>
+    <div class='content'>
+      <span class='emoji'>&#128512;</span>
+      <p class='message'>Welcome user to Test Land 1.0 by AI</p>
+    </div>
+  </div>
+</body>
+</html>
